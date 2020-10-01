@@ -8,7 +8,6 @@ export function getRandomThrow() {
     } if (randomValue === 3) {
         rockPaperScisssors = 'scissors';
     }
-    console.log(rockPaperScisssors);
     return rockPaperScisssors;
 }
 
