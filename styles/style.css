@@ -28,36 +28,43 @@ body {
     background-color: var(--color2);
 }
 
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked + img {
+    border: solid 3px rgb(169, 169, 173);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
 #shoot-button {
     position: relative; top: 80px;
 }
 
 .win-lose-draw {
-    margin-top: 20%;
-    position: relative; top: 200px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
 
 .r-p-s-div {
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     justify-content: space-around;
 }
 
 label + label {
-    margin-left: 200px;
-}
-
-.win-lose-draw {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    margin-left: 100px;
 }
 
 label + label {
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 
