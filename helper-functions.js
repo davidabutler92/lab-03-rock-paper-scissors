@@ -12,12 +12,20 @@ export function getRandomThrow() {
     return rockPaperScisssors;
 }
 
-
-export function checkForWin(player, computer) {
+export function checkWinCondition(player, computer) {
     if (player === computer) {
-        draw++;
-    } 
+        return 'draw';
+    } if (player === 'rock' && computer === 'scissors') {
+        return 'win';
+    } if (player === 'rock' && computer === 'paper') {
+        return 'loss';
+    } if (player === 'paper' && computer === 'rock') {    
+        return 'win';
+    } if (player === 'paper' && computer === 'scissors') {
+        return 'loss';
+    } if (player === 'scissor' && computer === 'paper') {
+        return 'win';
+    } if (player === 'scissors' && computer === 'rock'){
+        return 'loss';
+    }
 }
-
-//win cases 
-//

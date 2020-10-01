@@ -28,9 +28,13 @@ body {
     background-color: var(--color2);
 }
 
+#shoot-button {
+    position: relative; top: 80px;
+}
 
 .win-lose-draw {
     margin-top: 20%;
+    position: relative; top: 200px;
 }
 
 .r-p-s-div {
