@@ -34,16 +34,38 @@ img {
     border-radius: 50%;
 }
 
-input[type="radio"]:checked + img {
-    border: solid 3px rgb(169, 169, 173);
+
+
+input[type="radio"]:checked +img {
+    position:relative;
+    width: 225px;
+    height: auto;
+    top: 0px;
+    display: block;
+    border: solid 1px #CCC;
+    box-shadow: 5px 5px 0px #d9534f;
 }
 
 input[type="radio"] {
     display: none;
 }
+button {
+    width: 5em;
+    height: 5em;
+    border-radius: 50% !important;
+
+}
 
 #shoot-button {
     position: relative; top: 80px;
+}
+
+#reset-button {
+    position: relative; top: 20px;
+}
+
+#game-outcome {
+    font-size: 2em;
 }
 
 .win-lose-draw {
@@ -57,6 +79,7 @@ input[type="radio"] {
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
+    height: 200px;
 }
 
 label + label {

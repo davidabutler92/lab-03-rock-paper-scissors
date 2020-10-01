@@ -12,19 +12,30 @@ export function getRandomThrow() {
 }
 
 export function checkWinCondition(player, computer) {
-    if (player === computer) {
-        return 'draw';
-    } if (player === 'rock' && computer === 'scissors') {
-        return 'win';
-    } if (player === 'rock' && computer === 'paper') {
-        return 'loss';
-    } if (player === 'paper' && computer === 'rock') {    
-        return 'win';
-    } if (player === 'paper' && computer === 'scissors') {
-        return 'loss';
-    } if (player === 'scissor' && computer === 'paper') {
-        return 'win';
-    } if (player === 'scissors' && computer === 'rock'){
-        return 'loss';
-    }
+    const winConditions = ((player === 'rock' && computer === 'scissors') 
+    || (player === 'paper' && computer === 'rock') 
+    || (player === 'scissor' && computer === 'paper'));
+
+    if (player === computer) return 'draw';
+    return winConditions ? 'win' : 'loss';
 }
+
+// export function checkWinCondition(player, computer) {
+//     if (player === computer) {
+//         return 'draw';
+//     } 
+//     if (player === 'rock' && computer === 'scissors') {
+//         return 'win';
+//     } if (player === 'rock' && computer === 'paper') {
+//         return 'loss';
+//     } if (player === 'paper' && computer === 'rock') {    
+//         return 'win';
+//     } if (player === 'paper' && computer === 'scissors') {
+//         return 'loss';
+//     } if (player === 'scissor' && computer === 'paper') {
+//         return 'win';
+//     } if (player === 'scissors' && computer === 'rock'){
+//         return 'loss';
+//     }
+// }
+
