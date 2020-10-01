@@ -28,6 +28,35 @@ body {
     background-color: var(--color2);
 }
 
+
+.win-lose-draw {
+    margin-top: 20%;
+}
+
+.r-p-s-div {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+label + label {
+    margin-left: 200px;
+}
+
+.win-lose-draw {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+}
+
+label + label {
+    margin-left: 200px;
+}
+
+
 main {
     display: flex;
     flex-direction: column;
