@@ -15,36 +15,40 @@
 
 <body>
     <main>
-   <div class="r-p-s-div">
-       <label>
-           <input 
-           name="options" 
-           type="radio" 
-           value="rock">
-           <img src="assets/rock2.png" alt="hand rock ">
-       </label>
-       <label>
-           <input 
-           name="options" 
-           type="radio" 
-           value="paper">
-           <img src="assets/paper.png" alt="hand paper">
-        </label> 
+    <div class="r-p-s-div">
         <label>
-           <input 
-           name="options" 
-           type="radio" 
-           value="scissors">
-           <img src="assets/scissors.png" alt="hand scissors">
+            <input 
+            name="options" 
+            type="radio" 
+            value="rock">
+            <img src="assets/rock2.png" alt="hand rock ">
         </label>
-    </div>
-    <button class="btn btn-danger" id="shoot-button">Shoot</button>
-</main>
+        <label>
+            <input 
+            name="options" 
+            type="radio" 
+            value="paper">
+            <img src="assets/paper.png" alt="hand paper">
+            </label> 
+            <label>
+            <input 
+            name="options" 
+            type="radio" 
+            value="scissors">
+            <img src="assets/scissors.png" alt="hand scissors">
+            </label>
+        </div>
+    <section>
+        <div id="game-outcome">Choose your weapon, worthy opponent!</div>
+        <button class="btn btn-danger" id="shoot-button">Shoot</button>
        <div class="win-lose-draw">
             <h3>Wins:  <span id="win-span">0</span></h3>
             <h3>Loses: <span id="lose-span">0</span></h3>
             <h3>Draws: <span id="draw-span">0</span></h3>
        </div>
+       <button class="btn btn-danger" id="reset-button">reset</button>
+    </section>
+</main>
 
 
     <footer>
